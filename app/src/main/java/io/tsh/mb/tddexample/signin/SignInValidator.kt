@@ -12,7 +12,16 @@ interface SignInValidator{
 }
 
 class SignInValidatorImpl : SignInValidator{
+    private val minUsernameLength = 3
+    private val minPasswordLength = 6
+
     override fun validate(username: String, password: String): ValidationResult {
-        return ValidationResult.VALID
+        return when {
+            username.isEmpty() -> ValidationResult.USERNAME_EMPTY
+            username.length < minUsernameLength -> ValidationResult.USERNAME_NOT_VALID
+            password.isEmpty() -> ValidationResult.PASSWORD_EMPTY
+            password.length < minPasswordLength -> ValidationResult.PASSWORD_NOT_VALID
+            else -> ValidationResult.VALID
+        }
     }
 }
