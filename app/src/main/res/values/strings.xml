@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TDDExample</string>
+
+    <string name="signInUsername">Username</string>
+    <string name="signInPassword">Password</string>
+    <string name="signInSubmit">Login</string>
+
+    <string name="signInErrorUsernameNotValid">Username is not valid</string>
+    <string name="signInErrorUsernameEmpty">Username is not valid</string>
+    <string name="signInErrorPasswordNotValid">Password is not valid</string>
+    <string name="signInPasswordEmpty">Password is empty</string>
+</resources>
