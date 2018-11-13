@@ -9,6 +9,9 @@ class SignInPresenter(
     private val loginRepository: SignInRepository,
     private val loginValidator: SignInValidator
 ): SignInContract.Presenter {
+    override fun login(username: String, password: String) {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
 
 
 }
